@@ -1,3 +1,6 @@
+This is a clone of the main repository at [https://github.com/vistle/vistle](https://github.com/vistle/vistle)
+- please follow Vistle development there.
+
 Visualization Testing Laboratory for Exascale Computing (Vistle)
 ================================================================
 
