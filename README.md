@@ -1,6 +1,8 @@
 This is a clone of the main repository at [https://github.com/vistle/vistle](https://github.com/vistle/vistle) -
 please follow Vistle development there.
 
+Whithin CRESTA, Vistle served as a testbed for remote hybrid rendering - see `vistle/rhr`, `vistle/cover/VncClient` and `vistle/module/Ray`.
+
 Visualization Testing Laboratory for Exascale Computing (Vistle)
 ================================================================
 
@@ -129,29 +131,15 @@ Source Code Organization
 - `vistle`:
   Vistle source code
 
-- `vistle/util`:
-  support code
-
-- `vistle/userinterface`:
-  common library for user interfaces
-
-- `vistle/gui`:
-  graphical user interface
-
-- `vistle/blower`:
-  command line user interface (Python)
-
-- `vistle/control`:
-  library for controlling a Vistle session
-
-- `vistle/vistle`:
-  Vistle session controller
-
-- `vistle/core`:
-  Vistle core data structures
-
-- `vistle/module`:
-  visualization algorithm modules and base library
-
-- `vistle/cover`:
-  plugins for OpenCOVER, e.g. for connecting to Vistle
+    - `vistle/util`: support code
+    - `vistle/userinterface`: common library for user interfaces
+    - `vistle/gui`: graphical user interface
+    - `vistle/blower`: command line user interface (Python)
+    - `vistle/control`: library for controlling a Vistle session
+    - `vistle/hub`: Vistle session controller
+    - `vistle/core`: Vistle core data structures
+    - `vistle/rhr`: library for remote hybrid rendering servers
+    - `vistle/module`: visualization algorithm modules and base library
+        - `vistle/module/Ray`: a parallel remote hybrid rendering server based on embree CPU ray-caster
+    - `vistle/cover`: plugins for OpenCOVER, e.g. for connecting to Vistle
+        - `vistle/cover/VncClient`: OpenCOVER remote hybrid rendering client plugin
